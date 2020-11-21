@@ -32,11 +32,11 @@ const Image = () => {
 };
 
 const Title = () => {
-  return <h3>A Promised Land</h3>;
+  return <p>A Promised Land</p>;
 };
 
 const Author = () => {
-  return <h2>Barack Obama</h2>;
+  return <p>Barack Obama</p>;
 };
 
 ReactDOM.render(<Booklist />, document.getElementById("root"));
