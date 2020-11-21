@@ -1,28 +1,44 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./style.css";
+let firstBook = {
+  img:
+    "https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg",
+  title: "A Promised Land",
+  author: "Barack Obama"
+};
 
+let secondBook = {
+  img:
+    "https://images-na.ssl-images-amazon.com/images/I/81Kc8OsbDxL._AC_UL200_SR200,200_.jpg",
+  title: "Greenlights",
+  author: "Matthew McConaughey"
+};
 function Booklist() {
   return (
     <div className="booklist">
-      <Book job="developer" bestSeller="true" />
-      <Book job="developer" bestSeller="false" />
+      <Book
+        img={firstBook.img}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        img={secondBook.img}
+        title={secondBook.title}
+        author={secondBook.author}
+      >
+        here is the children and i am still learning
+      </Book>
     </div>
   );
 }
-const Book = props => {
-  console.log(props);
-  const img =
-    "https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg";
-  const title = "A Promised Land";
-  const author = "Barack Obama";
+const Book = ({ img, title, author, children }) => {
   return (
     <article className="book">
       <img src={img} />
       <h1>{title}</h1>
       <h1>{author}</h1>
-      <p>{props.job}</p>
-      <p>{props.bestSeller}</p>
+      <p>{children}</p>
     </article>
   );
 };
