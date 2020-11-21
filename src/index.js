@@ -5,7 +5,8 @@ import "./style.css";
 function Booklist() {
   return (
     <div className="booklist">
-      <Book job="developer" bestSeller={true} />
+      <Book job="developer" bestSeller="true" />
+      <Book job="developer" bestSeller="false" />
     </div>
   );
 }
@@ -20,6 +21,8 @@ const Book = props => {
       <img src={img} />
       <h1>{title}</h1>
       <h1>{author}</h1>
+      <p>{props.job}</p>
+      <p>{props.bestSeller}</p>
     </article>
   );
 };
