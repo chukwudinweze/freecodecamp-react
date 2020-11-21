@@ -32,11 +32,15 @@ const Image = () => {
 };
 
 const Title = () => {
-  return <p>A Promised Land</p>;
+  return <p style={{ fontWeight: "bold" }}>A Promised Land</p>;
 };
 
 const Author = () => {
-  return <p>Barack Obama</p>;
+  return (
+    <p style={{ fontWeight: "bold", fontSize: "12px", color: "gray" }}>
+      Barack Obama
+    </p>
+  );
 };
 
 ReactDOM.render(<Booklist />, document.getElementById("root"));
