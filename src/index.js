@@ -4,10 +4,11 @@ import ReactDOM from "react-dom";
 function Greeting() {
   return (
     <div>
-      <h1>hello World</h1>
+     <Person/>
       <h3>My name is Chukwudi Nweze</h3>
     </div>
   );
 }
+const Person = () => <h1>hello world</h1>
 
 ReactDOM.render(<Greeting />, document.getElementById("root"));
