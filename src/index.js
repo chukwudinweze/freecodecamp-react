@@ -5,41 +5,22 @@ import "./style.css";
 function Booklist() {
   return (
     <div className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book job="developer" bestSeller={true} />
     </div>
   );
 }
-const Book = () => {
+const Book = props => {
+  console.log(props);
+  const img =
+    "https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg";
+  const title = "A Promised Land";
+  const author = "Barack Obama";
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={img} />
+      <h1>{title}</h1>
+      <h1>{author}</h1>
     </article>
-  );
-};
-const Image = () => {
-  return (
-    <img
-      src="https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg"
-      alt="bestseller"
-    />
-  );
-};
-
-const Title = () => {
-  return <p style={{ fontWeight: "bold" }}>A Promised Land</p>;
-};
-
-const Author = () => {
-  return (
-    <p style={{ fontWeight: "bold", fontSize: "12px", color: "gray" }}>
-      Barack Obama
-    </p>
   );
 };
 
