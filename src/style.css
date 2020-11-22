@@ -1,23 +1,23 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.booklist{
-display:flex;
-flex-wrap: wrap;
-width:90%;
-margin:0 auto;
+.booklist {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.book{
+.book {
   width: 230px;
-  height:250px;
-  border:1px solid gray;
+  height: 250px;
+  border: 1px solid gray;
   border-radius: 10px;
-  margin:10px;
+  margin: 10px;
 }
 
-.book p{
+.book p {
   margin-left: 35px;
 }
