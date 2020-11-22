@@ -1,5 +1,5 @@
 import React from "react";
-export const Book = ({ img, title, author }) => {
+const Book = ({ img, title, author }) => {
   const logTitle = () => {
     console.log(title);
   };
@@ -18,3 +18,5 @@ export const Book = ({ img, title, author }) => {
     </article>
   );
 };
+
+export default Book;
