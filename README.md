@@ -9,9 +9,10 @@ Today, haven learnt the basics of reactjs like:
 # Virtual DOM
 # Components, 
 # Events, 
-# Props
-# Separation of concerns/ Modularize code in react
-#Significance of keys in reactjs
+# Props,
+# Separation of concerns,
+# Modularize code in react,
+# Significance of keys in reactjs
 
 I'm going to discontinue this repo to open a new one where i will learn the advanced react concept and hopefully use it to build mega websites.
 
